@@ -67,10 +67,10 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "[name].css",
     }),
-    new CopyPlugin({
-      // If you have an /assets folder in the root project directory,
-      // use this example to copy them to the /dist folder on the webpack build
-      // patterns: [{ from: "./*.png", to: ".", context: "assets" }],
-    }),
+    // If you have an /assets folder in the root project directory,
+    // use this example to copy them to the /dist folder on the webpack build
+    // new CopyPlugin({
+    //   patterns: [{ from: "./*.png", to: ".", context: "assets" }],
+    // }),
   ],
 };
