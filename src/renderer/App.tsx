@@ -1,6 +1,11 @@
 import styles from "./App.module.css";
 
 export const App = () => {
-  // window.app.getCurrentPort();
-  return <h1 className={styles.testStyle}>Hello from React!</h1>;
+  const ipcExample = window.app.exampleFunction();
+  return (
+    <div>
+      <h1 className={styles.testStyle}>Hello from React!</h1>
+      <h2>{ipcExample}</h2>
+    </div>
+  );
 };

@@ -2,6 +2,6 @@
 // This ensures TypeScript doesn't complain about the functions not existing.
 interface Window {
   app: {
-    getCurrentPort(): number;
+    exampleFunction(): number;
   };
 }
