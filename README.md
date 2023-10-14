@@ -41,9 +41,8 @@ Starts the Webpack dev server by itself.
 ### `npm run main:dev`
 Starts the Electron app with live-reloading without starting the React server.
 
-### `npm run forge:package`
+### `npm run package`
 Uses electron-forge to package the app files
 
-### `npm run forge:make`
+### `npm run make`
 Uses electron-forge to create the release distribution of the Electron app.
-

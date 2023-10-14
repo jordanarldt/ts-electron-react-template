@@ -22,15 +22,15 @@ module.exports = {
     "import/order": [
       2,
       {
+        "newlines-between": "always",
         pathGroups: [
           {
-            pattern: "electron",
+            pattern: "{react,electron,electron/**}",
             group: "builtin",
-            position: "before",
-          }
+          },
+          { pattern: "@/**", group: "internal" },
+          { pattern: "@!(/)**", group: "external" },
         ],
-        pathGroupsExcludedImportTypes: ["electron", "react"],
-        "newlines-between": "always",
         groups: [
           "builtin",
           "external",
@@ -38,8 +38,9 @@ module.exports = {
           ["parent", "sibling"],
           "index",
           "object",
-          "type"
+          "type",
         ],
+        pathGroupsExcludedImportTypes: ["type"]
       },
     ],
   },
